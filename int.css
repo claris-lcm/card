@@ -9,6 +9,7 @@ body{
 .container{
  display: flex;
  justify-content: center;
+ flex-wrap: wrap;
 }
 .card{
     background: white;
@@ -28,4 +29,31 @@ body{
 }
 .card p{
     padding: 10px;
+}
+@media screen and (max-width: 700px){
+    .container{
+        display:flex;
+        flex-direction:column;
+    }
+    .card{
+        display:flex;
+        flex-direction:column;
+    }
+    .card-image{
+        display:flex;
+        flex-direction:column;
+    }
+    .card h2{
+        display:flex;
+        flex-direction:column;
+    }
+    .card p{
+        display:flex;
+flex-direction:column;
+    }
+}
+.card:hover{
+background:gray;
+color:white;
+cursor:pointer;
 }
