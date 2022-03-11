@@ -6,6 +6,26 @@
 body{
     background: black;
 }
+.navbar{
+    size: large;
+    justify-content: center;
+    background: gray;
+    text-align: center;
+    padding: 30px;
+}
+.content ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.content li{
+    list-style: none;
+}
+.content a{
+    size: large;
+    color: white;
+    text-decoration: none;
+}
 .container{
  display: flex;
  justify-content: center;
@@ -24,13 +44,14 @@ body{
     background-size: cover;
 }
 .card h2{
+    color:blue;
     padding: 10px;
     text-align: center;
 }
 .card p{
     padding: 10px;
 }
-@media screen and (max-width: 700px){
+@media screen and (max-width: 600px){
     .container{
         display:flex;
         flex-direction:column;
