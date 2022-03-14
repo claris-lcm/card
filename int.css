@@ -2,14 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
 }
 body{
-    background: black;
+    background: rgb(161, 148, 148);
 }
 .navbar{
     size: large;
     justify-content: center;
-    background: gray;
+    background: rgb(233, 210, 210);
     text-align: center;
     padding: 30px;
 }
@@ -22,8 +23,9 @@ body{
     list-style: none;
 }
 .content a{
+    font-size: 20px;
     size: large;
-    color: white;
+    color: black;
     text-decoration: none;
 }
 .container{
@@ -51,6 +53,12 @@ body{
 .card p{
     padding: 10px;
 }
+.com{
+    background-color: rgba(255, 255, 255, 0.932);
+    padding: 20px;
+    font-size: larger;
+    flex-direction:column ;
+}
 @media screen and (max-width: 600px){
     .container{
         display:flex;
@@ -77,4 +85,8 @@ flex-direction:column;
 background:gray;
 color:white;
 cursor:pointer;
+}
+.navbar{
+    display: flex;
+    flex-direction: column;
 }
