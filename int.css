@@ -5,14 +5,18 @@
     
 }
 body{
-    background: rgb(161, 148, 148);
+    overflow-x: hidden;
+    flex-wrap: wrap;
+    background:bisque;
 }
 .navbar{
+    width: 100%;
+    display: flex;
     size: large;
     justify-content: center;
     background: rgb(233, 210, 210);
     text-align: center;
-    padding: 30px;
+   padding: 20px;
 }
 .content ul{
     display: flex;
@@ -29,11 +33,13 @@ body{
     text-decoration: none;
 }
 .container{
+    align-items: center;
  display: flex;
  justify-content: center;
  flex-wrap: wrap;
 }
 .card{
+    align-items: center;
     background: white;
     width: 270px;
     height: 400px;
@@ -53,16 +59,18 @@ body{
 .card p{
     padding: 10px;
 }
-.com{
-    background-color: rgba(255, 255, 255, 0.932);
-    padding: 20px;
-    font-size: larger;
-    flex-direction:column ;
-}
+
 @media screen and (max-width: 600px){
+    .navbar{
+        display: hidden;
+    }
     .container{
+        padding-right: 20px;
+        padding-left: 50px;
+        
         display:flex;
         flex-direction:column;
+        
     }
     .card{
         display:flex;
@@ -87,6 +95,8 @@ color:white;
 cursor:pointer;
 }
 .navbar{
+    
+    padding:auto;
     display: flex;
     flex-direction: column;
 }
